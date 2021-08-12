@@ -1,0 +1,13 @@
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+}

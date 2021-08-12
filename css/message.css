@@ -1,0 +1,30 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-block: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38.83px;
+  text-align: center;
+}
+
+.message .is-bold {
+  font-weight: 700;
+}
+
+.message p {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .message {
+    font-size: 34px;
+    padding-block: 200px;
+  }
+
+  .message .is-bold {
+    font: var(--headline5)
+  }
+}

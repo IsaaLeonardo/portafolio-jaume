@@ -1,0 +1,15 @@
+.title {
+  display: inline-block;
+  text-decoration: none;
+  font: var(--headline5);
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 4px 8px;
+  box-shadow: -4px 4px 0px 0px var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font: var(--headline4);
+  }
+}
