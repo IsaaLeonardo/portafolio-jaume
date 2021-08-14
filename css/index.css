@@ -39,3 +39,9 @@ body {
   color: var(--primary);
   margin-block-start: 0;
 }
+
+#mail {
+  /* For form withouth backend and just JS */
+  position: absolute;
+  opacity: 0;
+}
