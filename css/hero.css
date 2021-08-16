@@ -63,7 +63,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 60px;
-    padding-block-start: 0;
+    padding-block-start: 80px;
   }
 
   .hero-copy {
