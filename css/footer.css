@@ -15,22 +15,30 @@
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
-
-  .footer-logo {
-    display: block;
-  }
-
+  
   .footer .social {
     order: 3;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .footer-logo {
+    display: block;
+  }
+
   .footer-copyright {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+    inline-size: 70%;
+  }
+
+  .footer-copyright p {
+    margin: 0;
   }
 }

@@ -40,6 +40,11 @@
     max-inline-size: 100%;
   }
 
+  .project:nth-child(1) .project-image img {
+    inline-size: 100%;
+    block-size: auto;
+  }
+
   .project-buttons {
     flex-direction: row;
   }
