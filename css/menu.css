@@ -17,6 +17,7 @@
 
 .menu ul a.is-active {
   color: var(--primary);
+  transition: .75s;
 }
 
 @media screen and (min-width: 768px) {

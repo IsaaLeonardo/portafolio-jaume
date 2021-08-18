@@ -18,13 +18,13 @@
         <nav class="menu">
           <ul>
             <li>
-              <a href="#main" class="is-active">Hola</a>
+              <a href="#main" id="link-main" class="is-active">Hola</a>
             </li>
             <li>
-              <a href="#projects">Proyectos</a>
+              <a href="#projects" id="link-projects" class="is-active">Proyectos</a>
             </li>
             <li>
-              <a href="#contact">Hablemos</a>
+              <a href="#contact" id="link-contact" class="is-active">Hablemos</a>
             </li>
           </ul>
         </nav>
@@ -154,8 +154,6 @@
       </div>
       <button type="submit" class="button">Enviar Mensaje</button>
     </form>
-    <!-- For form withouth backend and just JS -->
-    <a href="mailto:mcisaacleonardo@gmail.com" id="mail">mail</a>
 
     <footer class="footer">
       <div class="footer-logo">
@@ -187,46 +185,10 @@
     let testimonies = document.getElementsByClassName('project')
 
     for (let index in testimonies) {
-      if(index % 2 == 0) testimonies[index].className = 'project is-odd'
+      if(index % 2 == 0) testimonies[index].classList = 'project is-odd'
     }
   </script>
-  <script>
-    const $form = document.querySelector('#contact')
-    $form.addEventListener('submit', handleSubmit)
-
-    async function handleSubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-      const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      if(response.ok) {
-        this.reset()
-        alert('Gracias por contactarme!')
-      }
-    }
-  </script>
-  <script>
-    
-  </script>
-  <!-- For form withouth backend and just JS -->
-  <!-- <script>
-    const $form = document.querySelector('#contact')
-    const $mailtoButton = document.querySelector('#mail')
-
-    $form.addEventListener('submit', handleSubmit)
-
-    function handleSubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-      console.log(form.get('name'))
-      $mailtoButton.setAttribute('href', `mailto:mcisaacleonardo@gmail.com?subject=${form.get('name')}: ${form.get('email')}&body=${form.get('message')}`)
-      $mailtoButton.click()
-    }
-  </script> -->
+  <script src="./js/form.js"></script>
+  <script src="./js/headerColor.js"></script>
 </body>
 </html>
