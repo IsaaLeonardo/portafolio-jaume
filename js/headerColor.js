@@ -19,7 +19,7 @@ const options = {
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
-            return 
+            return
         }
         changeMenuNameColor(entry.target)
     })
@@ -35,7 +35,7 @@ function changeMenuNameColor(section) {
         let lastLetterOfLink = link.id[link.id.length - 1]
         let lastLetterOfSection = section.id[section.id.length - 1]
         if (lastLetterOfLink == lastLetterOfSection) {
-        link.classList.add("is-active")
+            link.classList.add("is-active")
         }
     })
 }

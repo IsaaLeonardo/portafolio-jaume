@@ -1,5 +1,6 @@
 const $button = document.getElementById('header-button')
 const $header = document.getElementById('header')
+const $point = document.getElementById('point')
 
 const observerForButton = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
@@ -13,6 +14,10 @@ $sections.forEach(section => {
     observerForButton.observe(section)
 })
 
-window.onscroll = function() {
-    $header.classList.add('is-blur')
-}
+const observerForBlur = new IntersectionObserver(function(entries) {
+    entries.forEach((entry,index) => {
+        $header.classList.toggle('is-blur')
+    })
+}, options)
+
+observerForBlur.observe($point)
