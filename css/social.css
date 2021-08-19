@@ -1,5 +1,16 @@
 .social {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  padding-block-end: 24px;
+}
+
+.social-network img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social-network a {
+  font-size: 16px;
+  line-height: 25.9px;
+  color: var(--primary)
 }

@@ -44,7 +44,7 @@
   inset-inline: 0;
   inset-block-end: 0;
   inline-size: 100%;
-  block-size: 60px;
+  block-size: 80px;
   background-color: white;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -63,7 +63,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 60px;
-    padding-block-start: 80px;
+    /* padding-block-start: 80px; */
   }
 
   .hero-copy {
@@ -72,7 +72,7 @@
   }
 
   .hero-copy .button {
-    display: none;
+    inline-size: 310px;
   }
 }
 
@@ -81,7 +81,18 @@
     font: var(--headline2);
   }
 
+  .wrapper {
+    position: relative;
+  }
+
+  .hero {
+    display: block;
+  }
+
   .hero-image {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: -40px;
     max-inline-size: 500px;
   }
 }

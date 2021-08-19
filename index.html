@@ -11,24 +11,26 @@
   <title>Portafolio</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="wrapper">
       <div class="header-content">
-        <img src="./images/logo.png" alt="logo" width="70" height="20">
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#main" id="link-main" class="is-active">Hola</a>
-            </li>
-            <li>
-              <a href="#projects" id="link-projects" class="is-active">Proyectos</a>
-            </li>
-            <li>
-              <a href="#contact" id="link-contact" class="is-active">Hablemos</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button">Currículum</button>
+        <div class="logo-nav">
+          <img src="./images/logo.png" alt="logo" width="70" height="20">
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#" id="link-main" onclick="scroll(0, 0)">Hola</a>
+              </li>
+              <li>
+                <a href="#projects" id="link-projects">Proyectos</a>
+              </li>
+              <li>
+                <a href="#contact" id="link-contact">Hablemos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="#" class="button" id="header-button">Currículum</a>
       </div>
     </div>
   </header>
@@ -48,18 +50,14 @@
         <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
         
         <div class="social">
-          <a class="button-icon" href="">
-            <img src="./icons/github.svg" alt="Ícono de teléfono">
-          </a>
-          <a class="button-icon" href="">
+          <div class="social-network">
             <img src="./icons/mail.svg" alt="Ícono de mail">
-          </a>
-          <a class="button-icon" href="">
-            <img src="./icons/instagram.svg" alt="Ícono de instagram">
-          </a>
-          <a class="button-icon" href="">
+            <a href="mailto:mcisaacleonardo@gmail.com">mcisaacleonardo@gmail.com</a>
+          </div>
+          <div class="social-network">
             <img src="./icons/twitter.svg" alt="Ícono de twitter">
-          </a>
+            <a href="https://twitter.com/isaaleonardo" target="_blank">@isaaleonardo</a>
+          </div>
         </div>
   
         <a href="#" class="button">Descargar Currículum</a>
@@ -190,5 +188,6 @@
   </script>
   <script src="./js/form.js"></script>
   <script src="./js/headerColor.js"></script>
+  <script src="./js/blur.js"></script>
 </body>
 </html>
