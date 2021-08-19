@@ -16,3 +16,12 @@ async function handleSubmit(event) {
     alert('Gracias por contactarme!')
     }
 }
+
+const $formInputs = document.querySelectorAll('.form-input')
+const $inputs = document.querySelectorAll('input')
+
+$inputs.forEach((input, index) => {
+    if(input.required) {
+        $formInputs[index].classList.add('is-required')
+    }
+})

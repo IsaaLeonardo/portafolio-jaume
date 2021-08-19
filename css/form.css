@@ -44,6 +44,11 @@
   block-size: 130px;
 }
 
+.form-input.is-required label::after {
+  content: '*';
+  color: #DA1414;
+}
+
 @media screen and (min-width: 768px) {
   .form{
     max-inline-size: 543px;

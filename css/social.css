@@ -14,3 +14,7 @@
   line-height: 25.9px;
   color: var(--primary)
 }
+
+.footer .social {
+  flex-direction: row;
+}
