@@ -46,7 +46,7 @@
 
 .form-input.is-required label::after {
   content: '*';
-  color: #DA1414;
+  color: #fd0404;
 }
 
 @media screen and (min-width: 768px) {

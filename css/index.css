@@ -13,8 +13,10 @@
 @import "./footer.css";
 
 :root { 
-  --primary: #310a90; 
-  --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+  --primary: rgb(41, 196, 87);
+  /* --gradient: rgb(61, 61, 61); */
+  --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #bbbbbb54 0%, rgb(61, 61, 61) 100%), linear-gradient(135deg, rgb(61, 61, 61) 0%, #313146 100%);
+  /* --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%); */
   --white: #ffffff;
   --baseFont: Poppins, sans-serif;
   --headline1: 700 5.9375rem/9.6068754196167rem var(--baseFont); 
